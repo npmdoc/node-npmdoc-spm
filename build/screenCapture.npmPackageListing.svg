@@ -1,120 +1,120 @@
 <svg height="1870" width="720" xmlns="http://www.w3.org/2000/svg">
 <rect height="1870" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
-<tspan x="10" y="26">  0.  2017-04-07 12:48:57 +0000   777157 bytes  .</tspan>
-<tspan x="10" y="42">  1.  2017-04-07 12:48:57 +0000     2394 bytes  CONTRIBUTING.md</tspan>
-<tspan x="10" y="58">  2.  2017-04-07 12:48:57 +0000     3239 bytes  HISTORY.md</tspan>
-<tspan x="10" y="74">  3.  2017-04-07 12:48:57 +0000     1558 bytes  LICENSE</tspan>
-<tspan x="10" y="90">  4.  2017-04-07 12:48:57 +0000      656 bytes  Makefile</tspan>
-<tspan x="10" y="106">  5.  2017-04-07 12:48:57 +0000     1246 bytes  README.md</tspan>
-<tspan x="10" y="122">  6.  2017-04-07 12:48:57 +0000     2395 bytes  bin/spm</tspan>
-<tspan x="10" y="138">  7.  2017-04-07 12:48:57 +0000       49 bytes  bin/spm-build</tspan>
-<tspan x="10" y="154">  8.  2017-04-07 12:48:57 +0000      194 bytes  bin/spm-completion</tspan>
-<tspan x="10" y="170">  9.  2017-04-07 12:48:57 +0000     1563 bytes  bin/spm-config</tspan>
-<tspan x="10" y="186"> 10.  2017-04-07 12:48:57 +0000     1854 bytes  bin/spm-doc</tspan>
-<tspan x="10" y="202"> 11.  2017-04-07 12:48:57 +0000     1360 bytes  bin/spm-info</tspan>
-<tspan x="10" y="218"> 12.  2017-04-07 12:48:57 +0000     2975 bytes  bin/spm-init</tspan>
-<tspan x="10" y="234"> 13.  2017-04-07 12:48:57 +0000     1792 bytes  bin/spm-install</tspan>
-<tspan x="10" y="250"> 14.  2017-04-07 12:48:57 +0000     1158 bytes  bin/spm-link</tspan>
-<tspan x="10" y="266"> 15.  2017-04-07 12:48:57 +0000     1500 bytes  bin/spm-login</tspan>
-<tspan x="10" y="282"> 16.  2017-04-07 12:48:57 +0000     1887 bytes  bin/spm-ls</tspan>
-<tspan x="10" y="298"> 17.  2017-04-07 12:48:57 +0000     2136 bytes  bin/spm-publish</tspan>
-<tspan x="10" y="314"> 18.  2017-04-07 12:48:57 +0000     1196 bytes  bin/spm-search</tspan>
-<tspan x="10" y="330"> 19.  2017-04-07 12:48:57 +0000       56 bytes  bin/spm-server</tspan>
-<tspan x="10" y="346"> 20.  2017-04-07 12:48:57 +0000      999 bytes  bin/spm-test</tspan>
-<tspan x="10" y="362"> 21.  2017-04-07 12:48:57 +0000     1873 bytes  bin/spm-unpublish</tspan>
-<tspan x="10" y="378"> 22.  2017-04-07 12:48:57 +0000      802 bytes  lib/client.js</tspan>
-<tspan x="10" y="394"> 23.  2017-04-07 12:48:57 +0000     7927 bytes  lib/doc.js</tspan>
-<tspan x="10" y="410"> 24.  2017-04-07 12:48:57 +0000      744 bytes  lib/sdk/module.js</tspan>
-<tspan x="10" y="426"> 25.  2017-04-07 12:48:57 +0000     3404 bytes  lib/sdk/yuan.js</tspan>
-<tspan x="10" y="442"> 26.  2017-04-07 12:48:57 +0000       81 bytes  lib/template/HISTORY.md</tspan>
-<tspan x="10" y="458"> 27.  2017-04-07 12:48:57 +0000      268 bytes  lib/template/README.md</tspan>
-<tspan x="10" y="474"> 28.  2017-04-07 12:48:57 +0000       95 bytes  lib/template/examples/index.md</tspan>
-<tspan x="10" y="490"> 29.  2017-04-07 12:48:57 +0000      187 bytes  lib/template/gitignore</tspan>
-<tspan x="10" y="506"> 30.  2017-04-07 12:48:57 +0000       54 bytes  lib/template/index.js</tspan>
-<tspan x="10" y="522"> 31.  2017-04-07 12:48:57 +0000      510 bytes  lib/template/package.json</tspan>
-<tspan x="10" y="538"> 32.  2017-04-07 12:48:57 +0000       82 bytes  lib/template/spmignore</tspan>
-<tspan x="10" y="554"> 33.  2017-04-07 12:48:57 +0000      162 bytes  lib/template/tests/index-spec.js</tspan>
-<tspan x="10" y="570"> 34.  2017-04-07 12:48:57 +0000      267 bytes  lib/template/travis.yml</tspan>
-<tspan x="10" y="586"> 35.  2017-04-07 12:48:57 +0000     2782 bytes  lib/test.js</tspan>
-<tspan x="10" y="602"> 36.  2017-04-07 12:48:57 +0000     1352 bytes  lib/theme/nico.js</tspan>
-<tspan x="10" y="618"> 37.  2017-04-07 12:48:57 +0000     7696 bytes  lib/theme/static/css/codemirror.css</tspan>
-<tspan x="10" y="634"> 38.  2017-04-07 12:48:57 +0000     3009 bytes  lib/theme/static/css/mocha.css</tspan>
-<tspan x="10" y="650"> 39.  2017-04-07 12:48:57 +0000     1963 bytes  lib/theme/static/css/normalize.css</tspan>
-<tspan x="10" y="666"> 40.  2017-04-07 12:48:57 +0000    11552 bytes  lib/theme/static/css/site.css</tspan>
-<tspan x="10" y="682"> 41.  2017-04-07 12:48:57 +0000     1231 bytes  lib/theme/static/css/solarized.css</tspan>
-<tspan x="10" y="698"> 42.  2017-04-07 12:48:57 +0000   109239 bytes  lib/theme/static/js/arale-qrcode.js</tspan>
-<tspan x="10" y="714"> 43.  2017-04-07 12:48:57 +0000     1859 bytes  lib/theme/static/js/html5shiv.js</tspan>
-<tspan x="10" y="730"> 44.  2017-04-07 12:48:57 +0000    74243 bytes  lib/theme/static/js/mocha.js</tspan>
-<tspan x="10" y="746"> 45.  2017-04-07 12:48:57 +0000    11593 bytes  lib/theme/static/js/nprogress.js</tspan>
-<tspan x="10" y="762"> 46.  2017-04-07 12:48:57 +0000     6769 bytes  lib/theme/static/js/sea.js</tspan>
-<tspan x="10" y="778"> 47.  2017-04-07 12:48:57 +0000   109054 bytes  lib/theme/static/js/sinon.js</tspan>
-<tspan x="10" y="794"> 48.  2017-04-07 12:48:57 +0000     1194 bytes  lib/theme/templates/history.html</tspan>
-<tspan x="10" y="810"> 49.  2017-04-07 12:48:57 +0000      603 bytes  lib/theme/templates/iframe.html</tspan>
-<tspan x="10" y="826"> 50.  2017-04-07 12:48:57 +0000     5107 bytes  lib/theme/templates/layout.html</tspan>
-<tspan x="10" y="842"> 51.  2017-04-07 12:48:57 +0000     1609 bytes  lib/theme/templates/mocha-runner.html</tspan>
-<tspan x="10" y="858"> 52.  2017-04-07 12:48:57 +0000      619 bytes  lib/theme/templates/post.html</tspan>
-<tspan x="10" y="874"> 53.  2017-04-07 12:48:57 +0000      244 bytes  lib/theme/templates/snippet/foot.html</tspan>
-<tspan x="10" y="890"> 54.  2017-04-07 12:48:57 +0000      795 bytes  lib/theme/templates/snippet/head.html</tspan>
-<tspan x="10" y="906"> 55.  2017-04-07 12:48:57 +0000     5488 bytes  lib/theme/theme.js</tspan>
-<tspan x="10" y="922"> 56.  2017-04-07 12:48:57 +0000     1672 bytes  lib/upload.js</tspan>
-<tspan x="10" y="938"> 57.  2017-04-07 12:48:57 +0000      277 bytes  lib/utils/coverage-hook.js</tspan>
-<tspan x="10" y="954"> 58.  2017-04-07 12:48:57 +0000     3290 bytes  lib/utils/deps.js</tspan>
-<tspan x="10" y="970"> 59.  2017-04-07 12:48:57 +0000      545 bytes  lib/utils/istanbul-phantom.js</tspan>
-<tspan x="10" y="986"> 60.  2017-04-07 12:48:57 +0000      439 bytes  lib/utils/normalizeDep.js</tspan>
-<tspan x="10" y="1002"> 61.  2017-04-07 12:48:57 +0000     1942 bytes  lib/utils/print.js</tspan>
-<tspan x="10" y="1018"> 62.  2017-04-07 12:48:57 +0000      959 bytes  lib/utils/run.js</tspan>
-<tspan x="10" y="1034"> 63.  2017-04-07 12:48:57 +0000     4183 bytes  lib/utils/tar.js</tspan>
-<tspan x="10" y="1050"> 64.  2017-04-07 12:48:57 +0000     4017 bytes  package.json</tspan>
-<tspan x="10" y="1066"> 65.  2017-04-07 12:48:57 +0000       16 bytes  scripts/githooks/post-merge</tspan>
-<tspan x="10" y="1082"> 66.  2017-04-07 12:48:57 +0000     1291 bytes  scripts/githooks/pre-commit</tspan>
-<tspan x="10" y="1098"> 67.  2017-04-07 12:48:57 +0000      108 bytes  test/fixtures/normal/Makefile</tspan>
-<tspan x="10" y="1114"> 68.  2017-04-07 12:48:57 +0000      108 bytes  test/fixtures/normal/_site/Makefile</tspan>
-<tspan x="10" y="1130"> 69.  2017-04-07 12:48:57 +0000       39 bytes  test/fixtures/normal/_site/_bundle.js</tspan>
-<tspan x="10" y="1146"> 70.  2017-04-07 12:48:57 +0000       36 bytes  test/fixtures/normal/_site/a.noext.js</tspan>
-<tspan x="10" y="1162"> 71.  2017-04-07 12:48:57 +0000       13 bytes  test/fixtures/normal/_site/a.tpl</tspan>
-<tspan x="10" y="1178"> 72.  2017-04-07 12:48:57 +0000     2121 bytes  test/fixtures/normal/_site/dist/bundle.js</tspan>
-<tspan x="10" y="1194"> 73.  2017-04-07 12:48:57 +0000     2671 bytes  test/fixtures/normal/_site/dist/bundle.js.map</tspan>
-<tspan x="10" y="1210"> 74.  2017-04-07 12:48:57 +0000     2296 bytes  test/fixtures/normal/_site/dist/test.js</tspan>
-<tspan x="10" y="1226"> 75.  2017-04-07 12:48:57 +0000     2779 bytes  test/fixtures/normal/_site/dist/test.js.map</tspan>
-<tspan x="10" y="1242"> 76.  2017-04-07 12:48:57 +0000      109 bytes  test/fixtures/normal/_site/index.js</tspan>
-<tspan x="10" y="1258"> 77.  2017-04-07 12:48:57 +0000      126 bytes  test/fixtures/normal/_site/package.json</tspan>
-<tspan x="10" y="1274"> 78.  2017-04-07 12:48:57 +0000       25 bytes  test/fixtures/normal/_site/relative.js</tspan>
-<tspan x="10" y="1290"> 79.  2017-04-07 12:48:57 +0000     7696 bytes  test/fixtures/normal/_site/static/css/codemirror\</tspan>
+<tspan x="10" y="26">  0.  2017-04-07 12:52:08 +0000   777157 bytes  .</tspan>
+<tspan x="10" y="42">  1.  2017-04-07 12:52:08 +0000     2394 bytes  CONTRIBUTING.md</tspan>
+<tspan x="10" y="58">  2.  2017-04-07 12:52:08 +0000     3239 bytes  HISTORY.md</tspan>
+<tspan x="10" y="74">  3.  2017-04-07 12:52:08 +0000     1558 bytes  LICENSE</tspan>
+<tspan x="10" y="90">  4.  2017-04-07 12:52:08 +0000      656 bytes  Makefile</tspan>
+<tspan x="10" y="106">  5.  2017-04-07 12:52:08 +0000     1246 bytes  README.md</tspan>
+<tspan x="10" y="122">  6.  2017-04-07 12:52:08 +0000     2395 bytes  bin/spm</tspan>
+<tspan x="10" y="138">  7.  2017-04-07 12:52:08 +0000       49 bytes  bin/spm-build</tspan>
+<tspan x="10" y="154">  8.  2017-04-07 12:52:08 +0000      194 bytes  bin/spm-completion</tspan>
+<tspan x="10" y="170">  9.  2017-04-07 12:52:08 +0000     1563 bytes  bin/spm-config</tspan>
+<tspan x="10" y="186"> 10.  2017-04-07 12:52:08 +0000     1854 bytes  bin/spm-doc</tspan>
+<tspan x="10" y="202"> 11.  2017-04-07 12:52:08 +0000     1360 bytes  bin/spm-info</tspan>
+<tspan x="10" y="218"> 12.  2017-04-07 12:52:08 +0000     2975 bytes  bin/spm-init</tspan>
+<tspan x="10" y="234"> 13.  2017-04-07 12:52:08 +0000     1792 bytes  bin/spm-install</tspan>
+<tspan x="10" y="250"> 14.  2017-04-07 12:52:08 +0000     1158 bytes  bin/spm-link</tspan>
+<tspan x="10" y="266"> 15.  2017-04-07 12:52:08 +0000     1500 bytes  bin/spm-login</tspan>
+<tspan x="10" y="282"> 16.  2017-04-07 12:52:08 +0000     1887 bytes  bin/spm-ls</tspan>
+<tspan x="10" y="298"> 17.  2017-04-07 12:52:08 +0000     2136 bytes  bin/spm-publish</tspan>
+<tspan x="10" y="314"> 18.  2017-04-07 12:52:08 +0000     1196 bytes  bin/spm-search</tspan>
+<tspan x="10" y="330"> 19.  2017-04-07 12:52:08 +0000       56 bytes  bin/spm-server</tspan>
+<tspan x="10" y="346"> 20.  2017-04-07 12:52:08 +0000      999 bytes  bin/spm-test</tspan>
+<tspan x="10" y="362"> 21.  2017-04-07 12:52:08 +0000     1873 bytes  bin/spm-unpublish</tspan>
+<tspan x="10" y="378"> 22.  2017-04-07 12:52:08 +0000      802 bytes  lib/client.js</tspan>
+<tspan x="10" y="394"> 23.  2017-04-07 12:52:08 +0000     7927 bytes  lib/doc.js</tspan>
+<tspan x="10" y="410"> 24.  2017-04-07 12:52:08 +0000      744 bytes  lib/sdk/module.js</tspan>
+<tspan x="10" y="426"> 25.  2017-04-07 12:52:08 +0000     3404 bytes  lib/sdk/yuan.js</tspan>
+<tspan x="10" y="442"> 26.  2017-04-07 12:52:08 +0000       81 bytes  lib/template/HISTORY.md</tspan>
+<tspan x="10" y="458"> 27.  2017-04-07 12:52:08 +0000      268 bytes  lib/template/README.md</tspan>
+<tspan x="10" y="474"> 28.  2017-04-07 12:52:08 +0000       95 bytes  lib/template/examples/index.md</tspan>
+<tspan x="10" y="490"> 29.  2017-04-07 12:52:08 +0000      187 bytes  lib/template/gitignore</tspan>
+<tspan x="10" y="506"> 30.  2017-04-07 12:52:08 +0000       54 bytes  lib/template/index.js</tspan>
+<tspan x="10" y="522"> 31.  2017-04-07 12:52:08 +0000      510 bytes  lib/template/package.json</tspan>
+<tspan x="10" y="538"> 32.  2017-04-07 12:52:08 +0000       82 bytes  lib/template/spmignore</tspan>
+<tspan x="10" y="554"> 33.  2017-04-07 12:52:08 +0000      162 bytes  lib/template/tests/index-spec.js</tspan>
+<tspan x="10" y="570"> 34.  2017-04-07 12:52:08 +0000      267 bytes  lib/template/travis.yml</tspan>
+<tspan x="10" y="586"> 35.  2017-04-07 12:52:08 +0000     2782 bytes  lib/test.js</tspan>
+<tspan x="10" y="602"> 36.  2017-04-07 12:52:08 +0000     1352 bytes  lib/theme/nico.js</tspan>
+<tspan x="10" y="618"> 37.  2017-04-07 12:52:08 +0000     7696 bytes  lib/theme/static/css/codemirror.css</tspan>
+<tspan x="10" y="634"> 38.  2017-04-07 12:52:08 +0000     3009 bytes  lib/theme/static/css/mocha.css</tspan>
+<tspan x="10" y="650"> 39.  2017-04-07 12:52:08 +0000     1963 bytes  lib/theme/static/css/normalize.css</tspan>
+<tspan x="10" y="666"> 40.  2017-04-07 12:52:08 +0000    11552 bytes  lib/theme/static/css/site.css</tspan>
+<tspan x="10" y="682"> 41.  2017-04-07 12:52:08 +0000     1231 bytes  lib/theme/static/css/solarized.css</tspan>
+<tspan x="10" y="698"> 42.  2017-04-07 12:52:08 +0000   109239 bytes  lib/theme/static/js/arale-qrcode.js</tspan>
+<tspan x="10" y="714"> 43.  2017-04-07 12:52:08 +0000     1859 bytes  lib/theme/static/js/html5shiv.js</tspan>
+<tspan x="10" y="730"> 44.  2017-04-07 12:52:08 +0000    74243 bytes  lib/theme/static/js/mocha.js</tspan>
+<tspan x="10" y="746"> 45.  2017-04-07 12:52:08 +0000    11593 bytes  lib/theme/static/js/nprogress.js</tspan>
+<tspan x="10" y="762"> 46.  2017-04-07 12:52:08 +0000     6769 bytes  lib/theme/static/js/sea.js</tspan>
+<tspan x="10" y="778"> 47.  2017-04-07 12:52:08 +0000   109054 bytes  lib/theme/static/js/sinon.js</tspan>
+<tspan x="10" y="794"> 48.  2017-04-07 12:52:08 +0000     1194 bytes  lib/theme/templates/history.html</tspan>
+<tspan x="10" y="810"> 49.  2017-04-07 12:52:08 +0000      603 bytes  lib/theme/templates/iframe.html</tspan>
+<tspan x="10" y="826"> 50.  2017-04-07 12:52:08 +0000     5107 bytes  lib/theme/templates/layout.html</tspan>
+<tspan x="10" y="842"> 51.  2017-04-07 12:52:08 +0000     1609 bytes  lib/theme/templates/mocha-runner.html</tspan>
+<tspan x="10" y="858"> 52.  2017-04-07 12:52:08 +0000      619 bytes  lib/theme/templates/post.html</tspan>
+<tspan x="10" y="874"> 53.  2017-04-07 12:52:08 +0000      244 bytes  lib/theme/templates/snippet/foot.html</tspan>
+<tspan x="10" y="890"> 54.  2017-04-07 12:52:08 +0000      795 bytes  lib/theme/templates/snippet/head.html</tspan>
+<tspan x="10" y="906"> 55.  2017-04-07 12:52:08 +0000     5488 bytes  lib/theme/theme.js</tspan>
+<tspan x="10" y="922"> 56.  2017-04-07 12:52:08 +0000     1672 bytes  lib/upload.js</tspan>
+<tspan x="10" y="938"> 57.  2017-04-07 12:52:08 +0000      277 bytes  lib/utils/coverage-hook.js</tspan>
+<tspan x="10" y="954"> 58.  2017-04-07 12:52:08 +0000     3290 bytes  lib/utils/deps.js</tspan>
+<tspan x="10" y="970"> 59.  2017-04-07 12:52:08 +0000      545 bytes  lib/utils/istanbul-phantom.js</tspan>
+<tspan x="10" y="986"> 60.  2017-04-07 12:52:08 +0000      439 bytes  lib/utils/normalizeDep.js</tspan>
+<tspan x="10" y="1002"> 61.  2017-04-07 12:52:08 +0000     1942 bytes  lib/utils/print.js</tspan>
+<tspan x="10" y="1018"> 62.  2017-04-07 12:52:08 +0000      959 bytes  lib/utils/run.js</tspan>
+<tspan x="10" y="1034"> 63.  2017-04-07 12:52:08 +0000     4183 bytes  lib/utils/tar.js</tspan>
+<tspan x="10" y="1050"> 64.  2017-04-07 12:52:08 +0000     4017 bytes  package.json</tspan>
+<tspan x="10" y="1066"> 65.  2017-04-07 12:52:08 +0000       16 bytes  scripts/githooks/post-merge</tspan>
+<tspan x="10" y="1082"> 66.  2017-04-07 12:52:08 +0000     1291 bytes  scripts/githooks/pre-commit</tspan>
+<tspan x="10" y="1098"> 67.  2017-04-07 12:52:08 +0000      108 bytes  test/fixtures/normal/Makefile</tspan>
+<tspan x="10" y="1114"> 68.  2017-04-07 12:52:08 +0000      108 bytes  test/fixtures/normal/_site/Makefile</tspan>
+<tspan x="10" y="1130"> 69.  2017-04-07 12:52:08 +0000       39 bytes  test/fixtures/normal/_site/_bundle.js</tspan>
+<tspan x="10" y="1146"> 70.  2017-04-07 12:52:08 +0000       36 bytes  test/fixtures/normal/_site/a.noext.js</tspan>
+<tspan x="10" y="1162"> 71.  2017-04-07 12:52:08 +0000       13 bytes  test/fixtures/normal/_site/a.tpl</tspan>
+<tspan x="10" y="1178"> 72.  2017-04-07 12:52:08 +0000     2121 bytes  test/fixtures/normal/_site/dist/bundle.js</tspan>
+<tspan x="10" y="1194"> 73.  2017-04-07 12:52:08 +0000     2671 bytes  test/fixtures/normal/_site/dist/bundle.js.map</tspan>
+<tspan x="10" y="1210"> 74.  2017-04-07 12:52:08 +0000     2296 bytes  test/fixtures/normal/_site/dist/test.js</tspan>
+<tspan x="10" y="1226"> 75.  2017-04-07 12:52:08 +0000     2779 bytes  test/fixtures/normal/_site/dist/test.js.map</tspan>
+<tspan x="10" y="1242"> 76.  2017-04-07 12:52:08 +0000      109 bytes  test/fixtures/normal/_site/index.js</tspan>
+<tspan x="10" y="1258"> 77.  2017-04-07 12:52:08 +0000      126 bytes  test/fixtures/normal/_site/package.json</tspan>
+<tspan x="10" y="1274"> 78.  2017-04-07 12:52:08 +0000       25 bytes  test/fixtures/normal/_site/relative.js</tspan>
+<tspan x="10" y="1290"> 79.  2017-04-07 12:52:08 +0000     7696 bytes  test/fixtures/normal/_site/static/css/codemirror\</tspan>
 <tspan x="10" y="1306">.css</tspan>
-<tspan x="10" y="1322"> 80.  2017-04-07 12:48:57 +0000     3009 bytes  test/fixtures/normal/_site/static/css/mocha.css</tspan>
-<tspan x="10" y="1338"> 81.  2017-04-07 12:48:57 +0000     1963 bytes  test/fixtures/normal/_site/static/css/normalize.\</tspan>
+<tspan x="10" y="1322"> 80.  2017-04-07 12:52:08 +0000     3009 bytes  test/fixtures/normal/_site/static/css/mocha.css</tspan>
+<tspan x="10" y="1338"> 81.  2017-04-07 12:52:08 +0000     1963 bytes  test/fixtures/normal/_site/static/css/normalize.\</tspan>
 <tspan x="10" y="1354">css</tspan>
-<tspan x="10" y="1370"> 82.  2017-04-07 12:48:57 +0000    11552 bytes  test/fixtures/normal/_site/static/css/site.css</tspan>
-<tspan x="10" y="1386"> 83.  2017-04-07 12:48:57 +0000     1231 bytes  test/fixtures/normal/_site/static/css/solarized.\</tspan>
+<tspan x="10" y="1370"> 82.  2017-04-07 12:52:08 +0000    11552 bytes  test/fixtures/normal/_site/static/css/site.css</tspan>
+<tspan x="10" y="1386"> 83.  2017-04-07 12:52:08 +0000     1231 bytes  test/fixtures/normal/_site/static/css/solarized.\</tspan>
 <tspan x="10" y="1402">css</tspan>
-<tspan x="10" y="1418"> 84.  2017-04-07 12:48:57 +0000   109239 bytes  test/fixtures/normal/_site/static/js/arale-qrcod\</tspan>
+<tspan x="10" y="1418"> 84.  2017-04-07 12:52:08 +0000   109239 bytes  test/fixtures/normal/_site/static/js/arale-qrcod\</tspan>
 <tspan x="10" y="1434">e.js</tspan>
-<tspan x="10" y="1450"> 85.  2017-04-07 12:48:57 +0000     1859 bytes  test/fixtures/normal/_site/static/js/html5shiv.j\</tspan>
+<tspan x="10" y="1450"> 85.  2017-04-07 12:52:08 +0000     1859 bytes  test/fixtures/normal/_site/static/js/html5shiv.j\</tspan>
 <tspan x="10" y="1466">s</tspan>
-<tspan x="10" y="1482"> 86.  2017-04-07 12:48:57 +0000    74243 bytes  test/fixtures/normal/_site/static/js/mocha.js</tspan>
-<tspan x="10" y="1498"> 87.  2017-04-07 12:48:57 +0000    11593 bytes  test/fixtures/normal/_site/static/js/nprogress.j\</tspan>
+<tspan x="10" y="1482"> 86.  2017-04-07 12:52:08 +0000    74243 bytes  test/fixtures/normal/_site/static/js/mocha.js</tspan>
+<tspan x="10" y="1498"> 87.  2017-04-07 12:52:08 +0000    11593 bytes  test/fixtures/normal/_site/static/js/nprogress.j\</tspan>
 <tspan x="10" y="1514">s</tspan>
-<tspan x="10" y="1530"> 88.  2017-04-07 12:48:57 +0000     6769 bytes  test/fixtures/normal/_site/static/js/sea.js</tspan>
-<tspan x="10" y="1546"> 89.  2017-04-07 12:48:57 +0000   109054 bytes  test/fixtures/normal/_site/static/js/sinon.js</tspan>
-<tspan x="10" y="1562"> 90.  2017-04-07 12:48:57 +0000      102 bytes  test/fixtures/normal/_site/tests/index-spec.js</tspan>
-<tspan x="10" y="1578"> 91.  2017-04-07 12:48:57 +0000     1525 bytes  test/fixtures/normal/_site/tests/runner.html</tspan>
-<tspan x="10" y="1594"> 92.  2017-04-07 12:48:57 +0000       36 bytes  test/fixtures/normal/a.noext.js</tspan>
-<tspan x="10" y="1610"> 93.  2017-04-07 12:48:57 +0000       13 bytes  test/fixtures/normal/a.tpl</tspan>
-<tspan x="10" y="1626"> 94.  2017-04-07 12:48:57 +0000      109 bytes  test/fixtures/normal/index.js</tspan>
-<tspan x="10" y="1642"> 95.  2017-04-07 12:48:57 +0000      126 bytes  test/fixtures/normal/package.json</tspan>
-<tspan x="10" y="1658"> 96.  2017-04-07 12:48:57 +0000       25 bytes  test/fixtures/normal/relative.js</tspan>
-<tspan x="10" y="1674"> 97.  2017-04-07 12:48:57 +0000       17 bytes  test/fixtures/normal/spm_modules/b/0.1.0/index.j\</tspan>
+<tspan x="10" y="1530"> 88.  2017-04-07 12:52:08 +0000     6769 bytes  test/fixtures/normal/_site/static/js/sea.js</tspan>
+<tspan x="10" y="1546"> 89.  2017-04-07 12:52:08 +0000   109054 bytes  test/fixtures/normal/_site/static/js/sinon.js</tspan>
+<tspan x="10" y="1562"> 90.  2017-04-07 12:52:08 +0000      102 bytes  test/fixtures/normal/_site/tests/index-spec.js</tspan>
+<tspan x="10" y="1578"> 91.  2017-04-07 12:52:08 +0000     1525 bytes  test/fixtures/normal/_site/tests/runner.html</tspan>
+<tspan x="10" y="1594"> 92.  2017-04-07 12:52:08 +0000       36 bytes  test/fixtures/normal/a.noext.js</tspan>
+<tspan x="10" y="1610"> 93.  2017-04-07 12:52:08 +0000       13 bytes  test/fixtures/normal/a.tpl</tspan>
+<tspan x="10" y="1626"> 94.  2017-04-07 12:52:08 +0000      109 bytes  test/fixtures/normal/index.js</tspan>
+<tspan x="10" y="1642"> 95.  2017-04-07 12:52:08 +0000      126 bytes  test/fixtures/normal/package.json</tspan>
+<tspan x="10" y="1658"> 96.  2017-04-07 12:52:08 +0000       25 bytes  test/fixtures/normal/relative.js</tspan>
+<tspan x="10" y="1674"> 97.  2017-04-07 12:52:08 +0000       17 bytes  test/fixtures/normal/spm_modules/b/0.1.0/index.j\</tspan>
 <tspan x="10" y="1690">s</tspan>
-<tspan x="10" y="1706"> 98.  2017-04-07 12:48:57 +0000       78 bytes  test/fixtures/normal/spm_modules/b/0.1.0/package\</tspan>
+<tspan x="10" y="1706"> 98.  2017-04-07 12:52:08 +0000       78 bytes  test/fixtures/normal/spm_modules/b/0.1.0/package\</tspan>
 <tspan x="10" y="1722">.json</tspan>
-<tspan x="10" y="1738"> 99.  2017-04-07 12:48:57 +0000      102 bytes  test/fixtures/normal/tests/index-spec.js</tspan>
-<tspan x="10" y="1754">100.  2017-04-07 12:48:57 +0000        0 bytes  test/fixtures/tar-ignore/README.md</tspan>
-<tspan x="10" y="1770">101.  2017-04-07 12:48:57 +0000        0 bytes  test/fixtures/tar-ignore/a/a.js</tspan>
-<tspan x="10" y="1786">102.  2017-04-07 12:48:57 +0000        0 bytes  test/fixtures/tar-ignore/b/b.js</tspan>
-<tspan x="10" y="1802">103.  2017-04-07 12:48:57 +0000       85 bytes  test/fixtures/tar-ignore/package.json</tspan>
-<tspan x="10" y="1818">104.  2017-04-07 12:48:57 +0000      683 bytes  test/ignore.js</tspan>
-<tspan x="10" y="1834">105.  2017-04-07 12:48:57 +0000      467 bytes  test/module.js</tspan>
-<tspan x="10" y="1850">106.  2017-04-07 12:48:57 +0000     1855 bytes  test/test.js</tspan>
+<tspan x="10" y="1738"> 99.  2017-04-07 12:52:08 +0000      102 bytes  test/fixtures/normal/tests/index-spec.js</tspan>
+<tspan x="10" y="1754">100.  2017-04-07 12:52:08 +0000        0 bytes  test/fixtures/tar-ignore/README.md</tspan>
+<tspan x="10" y="1770">101.  2017-04-07 12:52:08 +0000        0 bytes  test/fixtures/tar-ignore/a/a.js</tspan>
+<tspan x="10" y="1786">102.  2017-04-07 12:52:08 +0000        0 bytes  test/fixtures/tar-ignore/b/b.js</tspan>
+<tspan x="10" y="1802">103.  2017-04-07 12:52:08 +0000       85 bytes  test/fixtures/tar-ignore/package.json</tspan>
+<tspan x="10" y="1818">104.  2017-04-07 12:52:08 +0000      683 bytes  test/ignore.js</tspan>
+<tspan x="10" y="1834">105.  2017-04-07 12:52:08 +0000      467 bytes  test/module.js</tspan>
+<tspan x="10" y="1850">106.  2017-04-07 12:52:08 +0000     1855 bytes  test/test.js</tspan>
 </text>
 </svg>
