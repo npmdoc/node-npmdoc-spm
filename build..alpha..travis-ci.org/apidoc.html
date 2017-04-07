@@ -1,0 +1,487 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="http://spmjs.io"
+
+    >spm (v3.6.12)</a>
+</h1>
+<h4>Static Package Manager</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.spm">module spm</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spm.doc">
+            function <span class="apidocSignatureSpan">spm.</span>doc
+            <span class="apidocSignatureSpan">(argv, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spm.</span>client</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.spm.client">module spm.client</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spm.client.config">
+            function <span class="apidocSignatureSpan">spm.client.</span>config
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spm.client.info">
+            function <span class="apidocSignatureSpan">spm.client.</span>info
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spm.client.install">
+            function <span class="apidocSignatureSpan">spm.client.</span>install
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spm.client.login">
+            function <span class="apidocSignatureSpan">spm.client.</span>login
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spm.client.publish">
+            function <span class="apidocSignatureSpan">spm.client.</span>publish
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spm.client.search">
+            function <span class="apidocSignatureSpan">spm.client.</span>search
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spm.client.unpublish">
+            function <span class="apidocSignatureSpan">spm.client.</span>unpublish
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.spm.doc">module spm.doc</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spm.doc.doc">
+            function <span class="apidocSignatureSpan">spm.</span>doc
+            <span class="apidocSignatureSpan">(argv, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spm.doc.build">
+            function <span class="apidocSignatureSpan">spm.doc.</span>build
+            <span class="apidocSignatureSpan">(argv, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spm.doc.publish">
+            function <span class="apidocSignatureSpan">spm.doc.</span>publish
+            <span class="apidocSignatureSpan">(argv, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spm.doc.server">
+            function <span class="apidocSignatureSpan">spm.doc.</span>server
+            <span class="apidocSignatureSpan">(argv, callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.spm" id="apidoc.module.spm">module spm</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.spm.doc" id="apidoc.element.spm.doc">
+        function <span class="apidocSignatureSpan">spm.</span>doc
+        <span class="apidocSignatureSpan">(argv, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">doc = function (argv, callback) {
+  callback = callback || noop;
+  if (argv.clean) cleanDoc();
+  if (argv.build) return build(argv, callback);
+  if (argv.publish) return publish(argv, callback);
+  return server(argv, callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.spm.client" id="apidoc.module.spm.client">module spm.client</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.spm.client.config" id="apidoc.element.spm.client.config">
+        function <span class="apidocSignatureSpan">spm.client.</span>config
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function config(obj) {
+  if (!obj) {
+    debug(&#x27;get %j&#x27;, _config);
+    return _config;
+  }
+  copy(_config, obj);
+  debug(&#x27;set %j&#x27;, _config);
+  return _config;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+if (exists(&#x27;package.json&#x27;)) {
+  var pkg = readJSON(&#x27;package.json&#x27;);
+  var spm = pkg.spm || {};
+  registry = spm.registry;
+}
+
+// load global config from spmrc
+client.<span class="apidocCodeKeywordSpan">config</span>({
+  registry: registry || spmrc.get(&#x27;registry&#x27;),
+  proxy: spmrc.get(&#x27;proxy&#x27;),
+  auth: spmrc.get(&#x27;auth&#x27;),
+  temp: spmrc.get(&#x27;user.temp&#x27;)
+});
+
+exports.config = client.config;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spm.client.info" id="apidoc.element.spm.client.info">
+        function <span class="apidocSignatureSpan">spm.client.</span>info
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function createPromise() {
+  return co.call(this, fn.apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  });
+}
+
+function buildPackage(opts, isWatch, callback) {
+  var compiler = webpack(opts);
+  compiler.plugin(&#x27;compile&#x27;, function() {
+log.<span class="apidocCodeKeywordSpan">info</span>(&#x27;build&#x27;, &#x27;compile&#x27;);
+  });
+  compiler.plugin(&#x27;done&#x27;, function(stats) {
+printResult(stats);
+log.info(&#x27;build&#x27;, &#x27;done&#x27;);
+
+if (callback) {
+  callback();
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spm.client.install" id="apidoc.element.spm.client.install">
+        function <span class="apidocSignatureSpan">spm.client.</span>install
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function createPromise() {
+  return co.call(this, fn.apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spm.client.login" id="apidoc.element.spm.client.login">
+        function <span class="apidocSignatureSpan">spm.client.</span>login
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function createPromise() {
+  return co.call(this, fn.apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spm.client.publish" id="apidoc.element.spm.client.publish">
+        function <span class="apidocSignatureSpan">spm.client.</span>publish
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function createPromise() {
+  return co.call(this, fn.apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spm.client.search" id="apidoc.element.spm.client.search">
+        function <span class="apidocSignatureSpan">spm.client.</span>search
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function createPromise() {
+  return co.call(this, fn.apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spm.client.unpublish" id="apidoc.element.spm.client.unpublish">
+        function <span class="apidocSignatureSpan">spm.client.</span>unpublish
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function createPromise() {
+  return co.call(this, fn.apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.spm.doc" id="apidoc.module.spm.doc">module spm.doc</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.spm.doc.doc" id="apidoc.element.spm.doc.doc">
+        function <span class="apidocSignatureSpan">spm.</span>doc
+        <span class="apidocSignatureSpan">(argv, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">doc = function (argv, callback) {
+  callback = callback || noop;
+  if (argv.clean) cleanDoc();
+  if (argv.build) return build(argv, callback);
+  if (argv.publish) return publish(argv, callback);
+  return server(argv, callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spm.doc.build" id="apidoc.element.spm.doc.build">
+        function <span class="apidocSignatureSpan">spm.doc.</span>build
+        <span class="apidocSignatureSpan">(argv, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function build(argv, callback) {
+  argv.watch = false;
+  argv.config = getThemePath();
+  webpackWrap(argv, function() {
+    nico.build(argv);
+    callback();
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+module.exports.server = server;
+module.exports.publish = publish;
+
+function build(argv, callback) {
+argv.watch = false;
+argv.config = getThemePath();
+webpackWrap(argv, function() {
+  nico.<span class="apidocCodeKeywordSpan">build</span>(argv);
+  callback();
+});
+}
+
+function server(argv, callback) {
+argv.watch = true;
+webpackWrap(argv, function() {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spm.doc.publish" id="apidoc.element.spm.doc.publish">
+        function <span class="apidocSignatureSpan">spm.doc.</span>publish
+        <span class="apidocSignatureSpan">(argv, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function publish(argv, callback) {
+  build(argv, function() {
+    var pkg = readJSON(&#x27;package.json&#x27;);
+    var registry;
+    if (pkg &#x26;&#x26; pkg.spm) {
+      registry = pkg.spm.registry;
+    }
+    upload({
+      doc: DOC_PATH,
+      registry: argv.registry || registry
+    }, callback);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spm.doc.server" id="apidoc.element.spm.doc.server">
+        function <span class="apidocSignatureSpan">spm.doc.</span>server
+        <span class="apidocSignatureSpan">(argv, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function server(argv, callback) {
+  argv.watch = true;
+  webpackWrap(argv, function() {
+    nico.server(argv, callback);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  callback();
+});
+}
+
+function server(argv, callback) {
+argv.watch = true;
+webpackWrap(argv, function() {
+  nico.<span class="apidocCodeKeywordSpan">server</span>(argv, callback);
+});
+}
+
+function webpackWrap(argv, callback) {
+argv.config = getThemePath();
+argv.port = argv.port || 8000;
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
