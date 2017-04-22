@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="http://spmjs.io"
-
-    >spm (v3.9.0-beta3)</a>
+    <a href="http://spmjs.io">spm (v3.9.0-beta3)</a>
 </h1>
 <h4>Static Package Manager</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.spm">module spm</a><ol>
 
@@ -399,26 +392,26 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function config(obj) {
   if (!obj) {
-    debug(&#x27;get %j&#x27;, _config);
+    debug('get %j', _config);
     return _config;
   }
   copy(_config, obj);
-  debug(&#x27;set %j&#x27;, _config);
+  debug('set %j', _config);
   return _config;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-if (exists(&#x27;package.json&#x27;)) {
-  var pkg = readJSON(&#x27;package.json&#x27;);
+if (exists('package.json')) {
+  var pkg = readJSON('package.json');
   var spm = pkg.spm || {};
   registry = spm.registry;
 }
 
 // load global config from spmrc
 client.<span class="apidocCodeKeywordSpan">config</span>({
-  registry: registry || spmrc.get(&#x27;registry&#x27;),
-  proxy: spmrc.get(&#x27;proxy&#x27;),
-  auth: spmrc.get(&#x27;auth&#x27;),
-  temp: spmrc.get(&#x27;user.temp&#x27;)
+  registry: registry || spmrc.get('registry'),
+  proxy: spmrc.get('proxy'),
+  auth: spmrc.get('auth'),
+  temp: spmrc.get('user.temp')
 });
 
 exports.config = client.config;
@@ -438,21 +431,21 @@ exports.config = client.config;
   return co.call(this, fn.apply(this, arguments));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-var log = require(&#x27;spm-log&#x27;);
-var readJSON = require(&#x27;fs-extra&#x27;).readJSONSync;
-var yuan = require(&#x27;./sdk/yuan&#x27;);
-var spmrc = require(&#x27;spmrc&#x27;);
+var log = require('spm-log');
+var readJSON = require('fs-extra').readJSONSync;
+var yuan = require('./sdk/yuan');
+var spmrc = require('spmrc');
 
 module.exports = function upload(options, callback) {
-var doc = options.doc || &#x27;_site&#x27;;
-log.<span class="apidocCodeKeywordSpan">info</span>(&#x27;upload&#x27;, doc);
-var pkg = readJSON(&#x27;package.json&#x27;);
+var doc = options.doc || '_site';
+log.<span class="apidocCodeKeywordSpan">info</span>('upload', doc);
+var pkg = readJSON('package.json');
 _createTar(doc, pkg, function(err, target) {
   pkg.tarfile = target;
   pkg.tag = options.tag;
   yuan(options).upload(pkg, function(err, res, body) {
     if (err) {
-      log.error(&#x27;exit&#x27;, err);
+      log.error('exit', err);
 ...</pre></li>
     </ul>
 
@@ -546,14 +539,14 @@ _createTar(doc, pkg, function(err, target) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getDeps = function (file) {
-  var content = readFile(file, &#x27;utf-8&#x27;);
+  var content = readFile(file, 'utf-8');
   var extname = path.extname(file);
 
   var ret = [];
   var re, m;
 
-  // &#x3c;script type=&#x22;text/spm&#x22;&#x3e; .... &#x3c;/script&#x3e;
-  re = /(&#x3c;script type=\&#x22;text\/spm\&#x22;&#x3e;)([\s\S]*?)(&#x3c;\/script&#x3e;)/gmi;
+  // &lt;script type="text/spm"&gt; .... &lt;/script&gt;
+  re = /(&lt;script type=\"text\/spm\"&gt;)([\s\S]*?)(&lt;\/script&gt;)/gmi;
   while((m = re.exec(content)) !== null) {
     crequire(m[2]).forEach(function(item) {
       ret.push(normalizeDep(item.path, file));
@@ -561,7 +554,7 @@ _createTar(doc, pkg, function(err, target) {
   }
 
   // ````javascript .... ````
-  if (extname.toLowerCase() === &#x27;.md&#x27;) {
+  if (extname.toLowerCase() === '.md') {
     re = /````(javascript|js)([\s\S]+?)````/gm;
     while ((m = re.exec(content)) !== null) {
       crequire(m[2]).forEach(function (item) {
@@ -570,7 +563,7 @@ _createTar(doc, pkg, function(err, target) {
     }
   }
 
-  return require(&#x27;uniq&#x27;)(ret);
+  return require('uniq')(ret);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -586,12 +579,12 @@ _createTar(doc, pkg, function(err, target) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">replaceDeps = function (content, file) {
   if (file) {
-    content = readFile(file, &#x27;utf-8&#x27;);
+    content = readFile(file, 'utf-8');
   } else {
-    var file_m = content.match(/&#x3c;!--filepath:([^\s]+?)\s--&#x3e;/);
-    file = file_m &#x26;&#x26; file_m[1];
-    if (content &#x26;&#x26; !file) {
-      log.error(&#x27;error&#x27;, &#x27;filepath not found&#x27;);
+    var file_m = content.match(/&lt;!--filepath:([^\s]+?)\s--&gt;/);
+    file = file_m &amp;&amp; file_m[1];
+    if (content &amp;&amp; !file) {
+      log.error('error', 'filepath not found');
     }
   }
 
@@ -599,9 +592,9 @@ _createTar(doc, pkg, function(err, target) {
   var re, re_match;
 
   // for iframe syntax and html files
-  // &#x3c;script type=&#x22;text/spm&#x22;&#x3e; .... &#x3c;/script&#x3e;
-  re = /(&#x3c;script type=\&#x22;text\/spm\&#x22;&#x3e;)([\s\S]*?)(&#x3c;\/script&#x3e;)/gi;
-  re_match = /(&#x3c;script type=\&#x22;text\/spm\&#x22;&#x3e;)([\s\S]*?)(&#x3c;\/script&#x3e;)/i;
+  // &lt;script type="text/spm"&gt; .... &lt;/script&gt;
+  re = /(&lt;script type=\"text\/spm\"&gt;)([\s\S]*?)(&lt;\/script&gt;)/gi;
+  re_match = /(&lt;script type=\"text\/spm\"&gt;)([\s\S]*?)(&lt;\/script&gt;)/i;
 
   content = content.replace(re, function(replacement) {
     var match = re_match.exec(replacement);
@@ -610,14 +603,14 @@ _createTar(doc, pkg, function(err, target) {
     }
     var code = match[2];
     code = transform(code, file);
-    return match[1].replace(&#x27;type=&#x22;text/spm&#x22;&#x27;, &#x27;&#x27;) + code + match[3];
+    return match[1].replace('type="text/spm"', '') + code + match[3];
   });
 
-  if (extname.toLowerCase() === &#x27;.md&#x27;) {
+  if (extname.toLowerCase() === '.md') {
 
     // ````javascript ... ````
-    re = /(&#x3c;script class=\&#x22;nico-insert-code\&#x22;&#x3e;)([\s\S]*?)(&#x3c;\/script&#x3e;)/gi;
-    re_match = /(&#x3c;script class=\&#x22;nico-insert-code\&#x22;&#x3e;)([\s\S]*?)(&#x3c;\/script&#x3e;)/i;
+    re = /(&lt;script class=\"nico-insert-code\"&gt;)([\s\S]*?)(&lt;\/script&gt;)/gi;
+    re_match = /(&lt;script class=\"nico-insert-code\"&gt;)([\s\S]*?)(&lt;\/script&gt;)/i;
 
     content = content.replace(re, function (replacement) {
       var match = re_match.exec(replacement);
@@ -627,14 +620,14 @@ _createTar(doc, pkg, function(err, target) {
       var code = match[2];
       code = transform(code, file);
       var codeMirror =
-        &#x27;&#x3c;textarea mode=&#x22;javascript&#x22; class=&#x22;spm-doc-textarea&#x22;&#x3e;&#x27; + match[2] + &#x27;&#x3c;/textarea&#x3e;&#x27;;
+        '&lt;textarea mode="javascript" class="spm-doc-textarea"&gt;' + match[2] + '&lt;/textarea&gt;';
       return match[1] + code + match[3] + codeMirror;
     });
 
 
     // ````css ... ````
-    re = /(&#x3c;style class=\&#x22;nico-insert-code\&#x22;&#x3e;)([\s\S]*?)(&#x3c;\/style&#x3e;)/gi;
-    re_match = /(&#x3c;style class=\&#x22;nico-insert-code\&#x22;&#x3e;)([\s\S]*?)(&#x3c;\/style&#x3e;)/i;
+    re = /(&lt;style class=\"nico-insert-code\"&gt;)([\s\S]*?)(&lt;\/style&gt;)/gi;
+    re_match = /(&lt;style class=\"nico-insert-code\"&gt;)([\s\S]*?)(&lt;\/style&gt;)/i;
 
     content = content.replace(re, function (replacement) {
       var match = re_match.exec(replacement);
@@ -642,7 +635,7 @@ _createTar(doc, pkg, function(err, target) {
         return replacement;
       }
       var codeMirror =
-        &#x27;&#x3c;textarea mode=&#x22;css&#x22; class=&#x22;spm-doc-textarea&#x22;&#x3e;&#x27; + match[2] + &#x27;&#x3c;/textarea&#x3e;&#x27;;
+        '&lt;textarea mode="css" class="spm-doc-textarea"&gt;' + match[2] + '&lt;/textarea&gt;';
       return replacement + codeMirror;
     });
 
@@ -658,7 +651,7 @@ find: function(pages, cat) {
 },
 find_category: findCategory,
 replace_code: function(content) {
-  return require(&#x27;../utils/deps&#x27;).<span class="apidocCodeKeywordSpan">replaceDeps</span>(content);
+  return require('../utils/deps').<span class="apidocCodeKeywordSpan">replaceDeps</span>(content);
 },
 is_runtime_handlebars: function() {
   var src = findSrc();
@@ -679,14 +672,14 @@ is_runtime_handlebars: function() {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function transform(code, file) {
-  // 转换 jsx 代码
-  if (code.indexOf(&#x27;/** @jsx React.DOM */&#x27;) &#x3e; -1) {
+  // è½¬æ¢ jsx ä»£ç&nbsp;
+  if (code.indexOf('/** @jsx React.DOM */') &gt; -1) {
     code = ReactTools.transform(code);
   }
 
-  // 依赖转换
+  // ä¾èµ–è½¬æ¢
   code = crequire(code, function(item) {
-    return &#x27;window[\&#x27;&#x27; + normalizeDep(item.path, file) + &#x27;\&#x27;]&#x27;;
+    return 'window[\'' + normalizeDep(item.path, file) + '\']';
   });
 
   return code;
@@ -697,14 +690,14 @@ is_runtime_handlebars: function() {
 exports.transform = transform;
 
 function transform(code, file) {
-// 转换 jsx 代码
-if (code.indexOf(&#x27;/** @jsx React.DOM */&#x27;) &#x3e; -1) {
+// è½¬æ¢ jsx ä»£ç&nbsp;
+if (code.indexOf('/** @jsx React.DOM */') &gt; -1) {
   code = ReactTools.<span class="apidocCodeKeywordSpan">transform</span>(code);
 }
 
-// 依赖转换
+// ä¾èµ–è½¬æ¢
 code = crequire(code, function(item) {
-  return &#x27;window[\&#x27;&#x27; + normalizeDep(item.path, file) + &#x27;\&#x27;]&#x27;;
+  return 'window[\'' + normalizeDep(item.path, file) + '\']';
 });
 ...</pre></li>
     </ul>
@@ -725,7 +718,7 @@ code = crequire(code, function(item) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getDependencies = function (root) {
   var pkg = new Package(root || process.cwd(), {
-    moduleDir: spmrc.get(&#x27;install.path&#x27;)
+    moduleDir: spmrc.get('install.path')
   });
 
   var ret = {};
@@ -733,7 +726,7 @@ code = crequire(code, function(item) {
   for (var k in deps) {
     if (!deps.hasOwnProperty(k)) continue;
     var dep = deps[k];
-    ret[dep.name] = dep.name + &#x27;/&#x27; + dep.version + &#x27;/&#x27; + dep.main;
+    ret[dep.name] = dep.name + '/' + dep.version + '/' + dep.main;
   }
   return ret;
 }</pre></li>
@@ -751,10 +744,10 @@ code = crequire(code, function(item) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getSourceFiles = function (root) {
   var pkg = new Package(root || process.cwd(), {
-    moduleDir: spmrc.get(&#x27;install.path&#x27;)
+    moduleDir: spmrc.get('install.path')
   });
   return Object.keys(pkg.files).map(function(file) {
-    return file.replace(/\.js$/, &#x27;&#x27;);
+    return file.replace(/\.js$/, '');
   });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -778,20 +771,20 @@ code = crequire(code, function(item) {
   var extname = path.extname(filepath);
   var filename = path.basename(filepath);
   // dotfiles
-  if (extname === &#x27;&#x27; &#x26;&#x26; filename.indexOf(&#x27;.&#x27;) === 0) {
+  if (extname === '' &amp;&amp; filename.indexOf('.') === 0) {
     return false;
   }
-  if (extname === &#x27;.tmp&#x27; || extname === &#x27;.bak&#x27;) {
+  if (extname === '.tmp' || extname === '.bak') {
     return false;
   }
-  // html 需额外处理，不能做简单复制
-  if (extname === &#x27;.html&#x27;) {
+  // html éœ€é¢å¤–å¤„ç†ï¼Œä¸èƒ½åšç®€å•å¤åˆ¶
+  if (extname === '.html') {
     return false;
   }
   if (/\.DS_Store/.test(filepath)) {
     return false;
   }
-  if (new RegExp(&#x27;^&#x27; + spmrc.get(&#x27;install.path&#x27;)).test(subdir) &#x26;&#x26;
+  if (new RegExp('^' + spmrc.get('install.path')).test(subdir) &amp;&amp;
       /\.(md|markdown|html|psd|zip|yml)/.test(path.extname(filepath))) {
     return false;
   }
@@ -846,21 +839,21 @@ code = crequire(code, function(item) {
   return data[name] || {};
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-var log = require(&#x27;spm-log&#x27;);
-var readJSON = require(&#x27;fs-extra&#x27;).readJSONSync;
-var yuan = require(&#x27;./sdk/yuan&#x27;);
-var spmrc = require(&#x27;spmrc&#x27;);
+var log = require('spm-log');
+var readJSON = require('fs-extra').readJSONSync;
+var yuan = require('./sdk/yuan');
+var spmrc = require('spmrc');
 
 module.exports = function upload(options, callback) {
-var doc = options.doc || &#x27;_site&#x27;;
-log.<span class="apidocCodeKeywordSpan">info</span>(&#x27;upload&#x27;, doc);
-var pkg = readJSON(&#x27;package.json&#x27;);
+var doc = options.doc || '_site';
+log.<span class="apidocCodeKeywordSpan">info</span>('upload', doc);
+var pkg = readJSON('package.json');
 _createTar(doc, pkg, function(err, target) {
   pkg.tarfile = target;
   pkg.tag = options.tag;
   yuan(options).upload(pkg, function(err, res, body) {
     if (err) {
-      log.error(&#x27;exit&#x27;, err);
+      log.error('exit', err);
 ...</pre></li>
     </ul>
 
@@ -913,30 +906,30 @@ _createTar(doc, pkg, function(err, target) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">create = function (source, target, callback, noIgnore) {
   function returnError(err) {
-    // don&#x27;t call the callback multiple times, just return the first error
+    // don't call the callback multiple times, just return the first error
     var _callback = callback;
     callback = function() {};
     return _callback(err);
   }
 
-  var fwriter = fstream.Writer({ type: &#x27;File&#x27;, path: target });
-  fwriter.on(&#x27;error&#x27;, function(err) {
-    log.error(&#x27;writing&#x27;, target);
+  var fwriter = fstream.Writer({ type: 'File', path: target });
+  fwriter.on('error', function(err) {
+    log.error('writing', target);
     return returnError(err);
   });
 
-  fwriter.on(&#x27;close&#x27;, function() {
+  fwriter.on('close', function() {
     callback(null, target);
   });
 
-  var pkg = JSON.parse(fs.readFileSync(path.join(source, &#x27;package.json&#x27;)));
+  var pkg = JSON.parse(fs.readFileSync(path.join(source, 'package.json')));
   var ignoreArray;
-  if (pkg &#x26;&#x26; pkg.spm &#x26;&#x26; pkg.spm.ignore) {
+  if (pkg &amp;&amp; pkg.spm &amp;&amp; pkg.spm.ignore) {
     ignoreArray = pkg.spm.ignore;
   } else {
     ignoreArray = [];
   }
-  var ignoreFiles = [&#x27;.gitignore&#x27;, &#x27;.spmignore&#x27;];
+  var ignoreFiles = ['.gitignore', '.spmignore'];
 
   if (noIgnore) {
     ignoreFiles = [];
@@ -945,25 +938,25 @@ _createTar(doc, pkg, function(err, target) {
 
   var istream = new Packer({
     path: source,
-    type: &#x27;Directory&#x27;,
+    type: 'Directory',
     ignoreFiles: ignoreFiles,
     ignoreArray: ignoreArray,
     isDirectory: true
   });
-  istream.on(&#x27;error&#x27;, function(err) {
-    log.error(&#x27;reading&#x27;, source);
+  istream.on('error', function(err) {
+    log.error('reading', source);
     return returnError(err);
   });
 
   var packer = tar.Pack({ noProprietary: true });
-  packer.on(&#x27;error&#x27;, function(err) {
-    log.error(&#x27;creating&#x27;, target);
+  packer.on('error', function(err) {
+    log.error('creating', target);
     return returnError(err);
   });
 
   var zipper = zlib.Gzip();
-  zipper.on(&#x27;error&#x27;, function(err) {
-    log.error(&#x27;gzip&#x27;, target);
+  zipper.on('error', function(err) {
+    log.error('gzip', target);
     return returnError(err);
   });
 
@@ -974,15 +967,15 @@ _createTar(doc, pkg, function(err, target) {
 };
 
 function _createTar(directory, data, callback, noIgnore) {
-var name = format(&#x27;%s-%s.tar.gz&#x27;, data.name, data.version || &#x27;&#x27;);
-var tmp = spmrc.get(&#x27;user.temp&#x27;);
+var name = format('%s-%s.tar.gz', data.name, data.version || '');
+var tmp = spmrc.get('user.temp');
 var tarfile = path.join(tmp, name);
 tar.<span class="apidocCodeKeywordSpan">create</span>(directory, tarfile, function(error, target) {
   var size = fs.statSync(target).size;
-  log.info(&#x27;tarfile&#x27;, name + &#x27; - &#x27; + ((size/1024).toFixed(2) + &#x27;KB&#x27;).to.magenta);
+  log.info('tarfile', name + ' - ' + ((size/1024).toFixed(2) + 'KB').to.magenta);
   // 2 MB
-  if (size &#x3e; 2079152) {
-    log.warn(&#x27;size&#x27;, &#x27;package is a little big, maybe you need a .spmignore&#x27;);
+  if (size &gt; 2079152) {
+    log.warn('size', 'package is a little big, maybe you need a .spmignore');
   }
   if (error) {
 ...</pre></li>
@@ -1020,11 +1013,11 @@ tar.<span class="apidocCodeKeywordSpan">create</span>(directory, tarfile, functi
     <li>description and source-code<pre class="apidocCodePre">function Yuan(options) {
   options = options || {};
 
-  this.server = options.registry || spmrc.get(&#x27;registry&#x27;) || &#x27;http://spmjs.io&#x27;;
-  this.server = this.server.replace(/\/$/, &#x27;&#x27;);
-  options.proxy = options.proxy || spmrc.get(&#x27;proxy&#x27;);
+  this.server = options.registry || spmrc.get('registry') || 'http://spmjs.io';
+  this.server = this.server.replace(/\/$/, '');
+  options.proxy = options.proxy || spmrc.get('proxy');
 
-  this.authKey = &#x27;auth&#x27;;
+  this.authKey = 'auth';
   this.options = options;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -1039,3 +1032,4 @@ tar.<span class="apidocCodeKeywordSpan">create</span>(directory, tarfile, functi
     ]
 </div>
 </div>
+</body></html>

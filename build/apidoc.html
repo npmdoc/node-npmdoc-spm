@@ -51,7 +51,7 @@
 
         href="http://spmjs.io"
 
-    >spm (v3.6.12)</a>
+    >spm (v3.9.0-beta3)</a>
 </h1>
 <h4>Static Package Manager</h4>
 <div class="apidocSectionDiv"><a
@@ -63,9 +63,9 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.spm.doc">
-            function <span class="apidocSignatureSpan">spm.</span>doc
-            <span class="apidocSignatureSpan">(argv, callback)</span>
+            <a class="apidocElementLiA" href="#apidoc.element.spm.yuan">
+            function <span class="apidocSignatureSpan">spm.</span>yuan
+            <span class="apidocSignatureSpan">(options)</span>
             </a>
 
         </li>
@@ -73,6 +73,36 @@
         <li>
 
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spm.</span>client</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spm.</span>deps</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spm.</span>module</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spm.</span>nico</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spm.</span>run</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spm.</span>tar</span>
 
         </li>
 
@@ -145,40 +175,177 @@
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.spm.doc">module spm.doc</a><ol>
+    <li class="apidocModuleLi"><a href="#apidoc.module.spm.deps">module spm.deps</a><ol>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.spm.doc.doc">
-            function <span class="apidocSignatureSpan">spm.</span>doc
-            <span class="apidocSignatureSpan">(argv, callback)</span>
+            <a class="apidocElementLiA" href="#apidoc.element.spm.deps.getDeps">
+            function <span class="apidocSignatureSpan">spm.deps.</span>getDeps
+            <span class="apidocSignatureSpan">(file)</span>
             </a>
 
         </li>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.spm.doc.build">
-            function <span class="apidocSignatureSpan">spm.doc.</span>build
-            <span class="apidocSignatureSpan">(argv, callback)</span>
+            <a class="apidocElementLiA" href="#apidoc.element.spm.deps.replaceDeps">
+            function <span class="apidocSignatureSpan">spm.deps.</span>replaceDeps
+            <span class="apidocSignatureSpan">(content, file)</span>
             </a>
 
         </li>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.spm.doc.publish">
-            function <span class="apidocSignatureSpan">spm.doc.</span>publish
-            <span class="apidocSignatureSpan">(argv, callback)</span>
+            <a class="apidocElementLiA" href="#apidoc.element.spm.deps.transform">
+            function <span class="apidocSignatureSpan">spm.deps.</span>transform
+            <span class="apidocSignatureSpan">(code, file)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.spm.module">module spm.module</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spm.module.getDependencies">
+            function <span class="apidocSignatureSpan">spm.module.</span>getDependencies
+            <span class="apidocSignatureSpan">(root)</span>
             </a>
 
         </li>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.spm.doc.server">
-            function <span class="apidocSignatureSpan">spm.doc.</span>server
-            <span class="apidocSignatureSpan">(argv, callback)</span>
+            <a class="apidocElementLiA" href="#apidoc.element.spm.module.getSourceFiles">
+            function <span class="apidocSignatureSpan">spm.module.</span>getSourceFiles
+            <span class="apidocSignatureSpan">(root)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.spm.nico">module spm.nico</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spm.nico.ignorefilter">
+            function <span class="apidocSignatureSpan">spm.nico.</span>ignorefilter
+            <span class="apidocSignatureSpan">(filepath, subdir)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spm.nico.</span>package</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">spm.nico.</span>writers</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">spm.nico.</span>google</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">spm.nico.</span>internalIp</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">spm.nico.</span>output</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">spm.nico.</span>permalink</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">spm.nico.</span>source</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">spm.nico.</span>theme</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">spm.nico.</span>yuanUrl</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.spm.run">module spm.run</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spm.run.info">
+            function <span class="apidocSignatureSpan">spm.run.</span>info
+            <span class="apidocSignatureSpan">(name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spm.run.record">
+            function <span class="apidocSignatureSpan">spm.run.</span>record
+            <span class="apidocSignatureSpan">(name, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.spm.tar">module spm.tar</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spm.tar.create">
+            function <span class="apidocSignatureSpan">spm.tar.</span>create
+            <span class="apidocSignatureSpan">(source, target, callback, noIgnore)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.spm.yuan">module spm.yuan</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spm.yuan.yuan">
+            function <span class="apidocSignatureSpan">spm.</span>yuan
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.spm.yuan.Yuan">
+            function <span class="apidocSignatureSpan">spm.yuan.</span>Yuan
+            <span class="apidocSignatureSpan">(options)</span>
             </a>
 
         </li>
@@ -192,21 +359,27 @@
 
 
     <h2>
-        <a href="#apidoc.element.spm.doc" id="apidoc.element.spm.doc">
-        function <span class="apidocSignatureSpan">spm.</span>doc
-        <span class="apidocSignatureSpan">(argv, callback)</span>
+        <a href="#apidoc.element.spm.yuan" id="apidoc.element.spm.yuan">
+        function <span class="apidocSignatureSpan">spm.</span>yuan
+        <span class="apidocSignatureSpan">(options)</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">doc = function (argv, callback) {
-  callback = callback || noop;
-  if (argv.clean) cleanDoc();
-  if (argv.build) return build(argv, callback);
-  if (argv.publish) return publish(argv, callback);
-  return server(argv, callback);
+    <li>description and source-code<pre class="apidocCodePre">yuan = function (options) {
+  return new Yuan(options);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -265,21 +438,21 @@ exports.config = client.config;
   return co.call(this, fn.apply(this, arguments));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
+var log = require(&#x27;spm-log&#x27;);
+var readJSON = require(&#x27;fs-extra&#x27;).readJSONSync;
+var yuan = require(&#x27;./sdk/yuan&#x27;);
+var spmrc = require(&#x27;spmrc&#x27;);
 
-  });
-}
-
-function buildPackage(opts, isWatch, callback) {
-  var compiler = webpack(opts);
-  compiler.plugin(&#x27;compile&#x27;, function() {
-log.<span class="apidocCodeKeywordSpan">info</span>(&#x27;build&#x27;, &#x27;compile&#x27;);
-  });
-  compiler.plugin(&#x27;done&#x27;, function(stats) {
-printResult(stats);
-log.info(&#x27;build&#x27;, &#x27;done&#x27;);
-
-if (callback) {
-  callback();
+module.exports = function upload(options, callback) {
+var doc = options.doc || &#x27;_site&#x27;;
+log.<span class="apidocCodeKeywordSpan">info</span>(&#x27;upload&#x27;, doc);
+var pkg = readJSON(&#x27;package.json&#x27;);
+_createTar(doc, pkg, function(err, target) {
+  pkg.tarfile = target;
+  pkg.tag = options.tag;
+  yuan(options).upload(pkg, function(err, res, body) {
+    if (err) {
+      log.error(&#x27;exit&#x27;, err);
 ...</pre></li>
     </ul>
 
@@ -362,83 +535,42 @@ if (callback) {
 </div>
 
 <div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.spm.doc" id="apidoc.module.spm.doc">module spm.doc</a></h1>
+<h1><a href="#apidoc.module.spm.deps" id="apidoc.module.spm.deps">module spm.deps</a></h1>
 
 
     <h2>
-        <a href="#apidoc.element.spm.doc.doc" id="apidoc.element.spm.doc.doc">
-        function <span class="apidocSignatureSpan">spm.</span>doc
-        <span class="apidocSignatureSpan">(argv, callback)</span>
+        <a href="#apidoc.element.spm.deps.getDeps" id="apidoc.element.spm.deps.getDeps">
+        function <span class="apidocSignatureSpan">spm.deps.</span>getDeps
+        <span class="apidocSignatureSpan">(file)</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">doc = function (argv, callback) {
-  callback = callback || noop;
-  if (argv.clean) cleanDoc();
-  if (argv.build) return build(argv, callback);
-  if (argv.publish) return publish(argv, callback);
-  return server(argv, callback);
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
+    <li>description and source-code<pre class="apidocCodePre">getDeps = function (file) {
+  var content = readFile(file, &#x27;utf-8&#x27;);
+  var extname = path.extname(file);
 
+  var ret = [];
+  var re, m;
 
+  // &#x3c;script type=&#x22;text/spm&#x22;&#x3e; .... &#x3c;/script&#x3e;
+  re = /(&#x3c;script type=\&#x22;text\/spm\&#x22;&#x3e;)([\s\S]*?)(&#x3c;\/script&#x3e;)/gmi;
+  while((m = re.exec(content)) !== null) {
+    crequire(m[2]).forEach(function(item) {
+      ret.push(normalizeDep(item.path, file));
+    });
+  }
 
-    <h2>
-        <a href="#apidoc.element.spm.doc.build" id="apidoc.element.spm.doc.build">
-        function <span class="apidocSignatureSpan">spm.doc.</span>build
-        <span class="apidocSignatureSpan">(argv, callback)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function build(argv, callback) {
-  argv.watch = false;
-  argv.config = getThemePath();
-  webpackWrap(argv, function() {
-    nico.build(argv);
-    callback();
-  });
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-module.exports.server = server;
-module.exports.publish = publish;
-
-function build(argv, callback) {
-argv.watch = false;
-argv.config = getThemePath();
-webpackWrap(argv, function() {
-  nico.<span class="apidocCodeKeywordSpan">build</span>(argv);
-  callback();
-});
-}
-
-function server(argv, callback) {
-argv.watch = true;
-webpackWrap(argv, function() {
-...</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.spm.doc.publish" id="apidoc.element.spm.doc.publish">
-        function <span class="apidocSignatureSpan">spm.doc.</span>publish
-        <span class="apidocSignatureSpan">(argv, callback)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function publish(argv, callback) {
-  build(argv, function() {
-    var pkg = readJSON(&#x27;package.json&#x27;);
-    var registry;
-    if (pkg &#x26;&#x26; pkg.spm) {
-      registry = pkg.spm.registry;
+  // ````javascript .... ````
+  if (extname.toLowerCase() === &#x27;.md&#x27;) {
+    re = /````(javascript|js)([\s\S]+?)````/gm;
+    while ((m = re.exec(content)) !== null) {
+      crequire(m[2]).forEach(function (item) {
+        ret.push(normalizeDep(item.path, file));
+      });
     }
-    upload({
-      doc: DOC_PATH,
-      registry: argv.registry || registry
-    }, callback);
-  });
+  }
+
+  return require(&#x27;uniq&#x27;)(ret);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -446,34 +578,456 @@ webpackWrap(argv, function() {
 
 
     <h2>
-        <a href="#apidoc.element.spm.doc.server" id="apidoc.element.spm.doc.server">
-        function <span class="apidocSignatureSpan">spm.doc.</span>server
-        <span class="apidocSignatureSpan">(argv, callback)</span>
+        <a href="#apidoc.element.spm.deps.replaceDeps" id="apidoc.element.spm.deps.replaceDeps">
+        function <span class="apidocSignatureSpan">spm.deps.</span>replaceDeps
+        <span class="apidocSignatureSpan">(content, file)</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">function server(argv, callback) {
-  argv.watch = true;
-  webpackWrap(argv, function() {
-    nico.server(argv, callback);
+    <li>description and source-code<pre class="apidocCodePre">replaceDeps = function (content, file) {
+  if (file) {
+    content = readFile(file, &#x27;utf-8&#x27;);
+  } else {
+    var file_m = content.match(/&#x3c;!--filepath:([^\s]+?)\s--&#x3e;/);
+    file = file_m &#x26;&#x26; file_m[1];
+    if (content &#x26;&#x26; !file) {
+      log.error(&#x27;error&#x27;, &#x27;filepath not found&#x27;);
+    }
+  }
+
+  var extname = path.extname(file);
+  var re, re_match;
+
+  // for iframe syntax and html files
+  // &#x3c;script type=&#x22;text/spm&#x22;&#x3e; .... &#x3c;/script&#x3e;
+  re = /(&#x3c;script type=\&#x22;text\/spm\&#x22;&#x3e;)([\s\S]*?)(&#x3c;\/script&#x3e;)/gi;
+  re_match = /(&#x3c;script type=\&#x22;text\/spm\&#x22;&#x3e;)([\s\S]*?)(&#x3c;\/script&#x3e;)/i;
+
+  content = content.replace(re, function(replacement) {
+    var match = re_match.exec(replacement);
+    if (!match) {
+      return replacement;
+    }
+    var code = match[2];
+    code = transform(code, file);
+    return match[1].replace(&#x27;type=&#x22;text/spm&#x22;&#x27;, &#x27;&#x27;) + code + match[3];
   });
+
+  if (extname.toLowerCase() === &#x27;.md&#x27;) {
+
+    // ````javascript ... ````
+    re = /(&#x3c;script class=\&#x22;nico-insert-code\&#x22;&#x3e;)([\s\S]*?)(&#x3c;\/script&#x3e;)/gi;
+    re_match = /(&#x3c;script class=\&#x22;nico-insert-code\&#x22;&#x3e;)([\s\S]*?)(&#x3c;\/script&#x3e;)/i;
+
+    content = content.replace(re, function (replacement) {
+      var match = re_match.exec(replacement);
+      if (!match) {
+        return replacement;
+      }
+      var code = match[2];
+      code = transform(code, file);
+      var codeMirror =
+        &#x27;&#x3c;textarea mode=&#x22;javascript&#x22; class=&#x22;spm-doc-textarea&#x22;&#x3e;&#x27; + match[2] + &#x27;&#x3c;/textarea&#x3e;&#x27;;
+      return match[1] + code + match[3] + codeMirror;
+    });
+
+
+    // ````css ... ````
+    re = /(&#x3c;style class=\&#x22;nico-insert-code\&#x22;&#x3e;)([\s\S]*?)(&#x3c;\/style&#x3e;)/gi;
+    re_match = /(&#x3c;style class=\&#x22;nico-insert-code\&#x22;&#x3e;)([\s\S]*?)(&#x3c;\/style&#x3e;)/i;
+
+    content = content.replace(re, function (replacement) {
+      var match = re_match.exec(replacement);
+      if (!match) {
+        return replacement;
+      }
+      var codeMirror =
+        &#x27;&#x3c;textarea mode=&#x22;css&#x22; class=&#x22;spm-doc-textarea&#x22;&#x3e;&#x27; + match[2] + &#x27;&#x3c;/textarea&#x3e;&#x27;;
+      return replacement + codeMirror;
+    });
+
+  }
+
+  return content;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-  callback();
-});
-}
-
-function server(argv, callback) {
-argv.watch = true;
-webpackWrap(argv, function() {
-  nico.<span class="apidocCodeKeywordSpan">server</span>(argv, callback);
-});
-}
-
-function webpackWrap(argv, callback) {
-argv.config = getThemePath();
-argv.port = argv.port || 8000;
+find: function(pages, cat) {
+  var ret = findCategory(pages, cat);
+  if (ret.length) return ret[0];
+  return null;
+},
+find_category: findCategory,
+replace_code: function(content) {
+  return require(&#x27;../utils/deps&#x27;).<span class="apidocCodeKeywordSpan">replaceDeps</span>(content);
+},
+is_runtime_handlebars: function() {
+  var src = findSrc();
+  for (var key in src) {
+    if (/\.handlebars$/.test(src[key])) {
+      return true;
+    }
 ...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spm.deps.transform" id="apidoc.element.spm.deps.transform">
+        function <span class="apidocSignatureSpan">spm.deps.</span>transform
+        <span class="apidocSignatureSpan">(code, file)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function transform(code, file) {
+  // 转换 jsx 代码
+  if (code.indexOf(&#x27;/** @jsx React.DOM */&#x27;) &#x3e; -1) {
+    code = ReactTools.transform(code);
+  }
+
+  // 依赖转换
+  code = crequire(code, function(item) {
+    return &#x27;window[\&#x27;&#x27; + normalizeDep(item.path, file) + &#x27;\&#x27;]&#x27;;
+  });
+
+  return code;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+};
+
+exports.transform = transform;
+
+function transform(code, file) {
+// 转换 jsx 代码
+if (code.indexOf(&#x27;/** @jsx React.DOM */&#x27;) &#x3e; -1) {
+  code = ReactTools.<span class="apidocCodeKeywordSpan">transform</span>(code);
+}
+
+// 依赖转换
+code = crequire(code, function(item) {
+  return &#x27;window[\&#x27;&#x27; + normalizeDep(item.path, file) + &#x27;\&#x27;]&#x27;;
+});
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.spm.module" id="apidoc.module.spm.module">module spm.module</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.spm.module.getDependencies" id="apidoc.element.spm.module.getDependencies">
+        function <span class="apidocSignatureSpan">spm.module.</span>getDependencies
+        <span class="apidocSignatureSpan">(root)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getDependencies = function (root) {
+  var pkg = new Package(root || process.cwd(), {
+    moduleDir: spmrc.get(&#x27;install.path&#x27;)
+  });
+
+  var ret = {};
+  var deps = extend({}, pkg.dependencies, pkg.devDependencies);
+  for (var k in deps) {
+    if (!deps.hasOwnProperty(k)) continue;
+    var dep = deps[k];
+    ret[dep.name] = dep.name + &#x27;/&#x27; + dep.version + &#x27;/&#x27; + dep.main;
+  }
+  return ret;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spm.module.getSourceFiles" id="apidoc.element.spm.module.getSourceFiles">
+        function <span class="apidocSignatureSpan">spm.module.</span>getSourceFiles
+        <span class="apidocSignatureSpan">(root)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getSourceFiles = function (root) {
+  var pkg = new Package(root || process.cwd(), {
+    moduleDir: spmrc.get(&#x27;install.path&#x27;)
+  });
+  return Object.keys(pkg.files).map(function(file) {
+    return file.replace(/\.js$/, &#x27;&#x27;);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.spm.nico" id="apidoc.module.spm.nico">module spm.nico</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.spm.nico.ignorefilter" id="apidoc.element.spm.nico.ignorefilter">
+        function <span class="apidocSignatureSpan">spm.nico.</span>ignorefilter
+        <span class="apidocSignatureSpan">(filepath, subdir)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">ignorefilter = function (filepath, subdir) {
+  var extname = path.extname(filepath);
+  var filename = path.basename(filepath);
+  // dotfiles
+  if (extname === &#x27;&#x27; &#x26;&#x26; filename.indexOf(&#x27;.&#x27;) === 0) {
+    return false;
+  }
+  if (extname === &#x27;.tmp&#x27; || extname === &#x27;.bak&#x27;) {
+    return false;
+  }
+  // html 需额外处理，不能做简单复制
+  if (extname === &#x27;.html&#x27;) {
+    return false;
+  }
+  if (/\.DS_Store/.test(filepath)) {
+    return false;
+  }
+  if (new RegExp(&#x27;^&#x27; + spmrc.get(&#x27;install.path&#x27;)).test(subdir) &#x26;&#x26;
+      /\.(md|markdown|html|psd|zip|yml)/.test(path.extname(filepath))) {
+    return false;
+  }
+  if (/^(_site|_theme|node_modules|spm_modules|\.idea)/.test(subdir)) {
+    return false;
+  }
+  return true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.spm.run" id="apidoc.module.spm.run">module spm.run</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.spm.run.info" id="apidoc.element.spm.run.info">
+        function <span class="apidocSignatureSpan">spm.run.</span>info
+        <span class="apidocSignatureSpan">(name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function info(name) {
+  var data = {};
+  if (exists(runfile)) {
+    data = readJSON(runfile);
+  }
+  if (!name) {
+    return data || {};
+  }
+  return data[name] || {};
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var log = require(&#x27;spm-log&#x27;);
+var readJSON = require(&#x27;fs-extra&#x27;).readJSONSync;
+var yuan = require(&#x27;./sdk/yuan&#x27;);
+var spmrc = require(&#x27;spmrc&#x27;);
+
+module.exports = function upload(options, callback) {
+var doc = options.doc || &#x27;_site&#x27;;
+log.<span class="apidocCodeKeywordSpan">info</span>(&#x27;upload&#x27;, doc);
+var pkg = readJSON(&#x27;package.json&#x27;);
+_createTar(doc, pkg, function(err, target) {
+  pkg.tarfile = target;
+  pkg.tag = options.tag;
+  yuan(options).upload(pkg, function(err, res, body) {
+    if (err) {
+      log.error(&#x27;exit&#x27;, err);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spm.run.record" id="apidoc.element.spm.run.record">
+        function <span class="apidocSignatureSpan">spm.run.</span>record
+        <span class="apidocSignatureSpan">(name, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function record(name, options) {
+  var data = info();
+  var ret = data[name] || {};
+
+  if (options) {
+    Object.keys(options).forEach(function(key) {
+      ret[key] = options[key];
+    });
+  }
+
+  ret.name = name;
+  if (ret.count) {
+    ret.count += 1;
+  } else {
+    ret.count = 1;
+  }
+  ret.time = new Date();
+  data[name] = ret;
+  mkdirs(dirname(runfile));
+  writeJSON(runfile, data);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.spm.tar" id="apidoc.module.spm.tar">module spm.tar</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.spm.tar.create" id="apidoc.element.spm.tar.create">
+        function <span class="apidocSignatureSpan">spm.tar.</span>create
+        <span class="apidocSignatureSpan">(source, target, callback, noIgnore)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (source, target, callback, noIgnore) {
+  function returnError(err) {
+    // don&#x27;t call the callback multiple times, just return the first error
+    var _callback = callback;
+    callback = function() {};
+    return _callback(err);
+  }
+
+  var fwriter = fstream.Writer({ type: &#x27;File&#x27;, path: target });
+  fwriter.on(&#x27;error&#x27;, function(err) {
+    log.error(&#x27;writing&#x27;, target);
+    return returnError(err);
+  });
+
+  fwriter.on(&#x27;close&#x27;, function() {
+    callback(null, target);
+  });
+
+  var pkg = JSON.parse(fs.readFileSync(path.join(source, &#x27;package.json&#x27;)));
+  var ignoreArray;
+  if (pkg &#x26;&#x26; pkg.spm &#x26;&#x26; pkg.spm.ignore) {
+    ignoreArray = pkg.spm.ignore;
+  } else {
+    ignoreArray = [];
+  }
+  var ignoreFiles = [&#x27;.gitignore&#x27;, &#x27;.spmignore&#x27;];
+
+  if (noIgnore) {
+    ignoreFiles = [];
+    ignoreArray = []; // always ignore dist when noIgnore
+  }
+
+  var istream = new Packer({
+    path: source,
+    type: &#x27;Directory&#x27;,
+    ignoreFiles: ignoreFiles,
+    ignoreArray: ignoreArray,
+    isDirectory: true
+  });
+  istream.on(&#x27;error&#x27;, function(err) {
+    log.error(&#x27;reading&#x27;, source);
+    return returnError(err);
+  });
+
+  var packer = tar.Pack({ noProprietary: true });
+  packer.on(&#x27;error&#x27;, function(err) {
+    log.error(&#x27;creating&#x27;, target);
+    return returnError(err);
+  });
+
+  var zipper = zlib.Gzip();
+  zipper.on(&#x27;error&#x27;, function(err) {
+    log.error(&#x27;gzip&#x27;, target);
+    return returnError(err);
+  });
+
+  istream.pipe(packer).pipe(zipper).pipe(fwriter);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}, true);
+};
+
+function _createTar(directory, data, callback, noIgnore) {
+var name = format(&#x27;%s-%s.tar.gz&#x27;, data.name, data.version || &#x27;&#x27;);
+var tmp = spmrc.get(&#x27;user.temp&#x27;);
+var tarfile = path.join(tmp, name);
+tar.<span class="apidocCodeKeywordSpan">create</span>(directory, tarfile, function(error, target) {
+  var size = fs.statSync(target).size;
+  log.info(&#x27;tarfile&#x27;, name + &#x27; - &#x27; + ((size/1024).toFixed(2) + &#x27;KB&#x27;).to.magenta);
+  // 2 MB
+  if (size &#x3e; 2079152) {
+    log.warn(&#x27;size&#x27;, &#x27;package is a little big, maybe you need a .spmignore&#x27;);
+  }
+  if (error) {
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.spm.yuan" id="apidoc.module.spm.yuan">module spm.yuan</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.spm.yuan.yuan" id="apidoc.element.spm.yuan.yuan">
+        function <span class="apidocSignatureSpan">spm.</span>yuan
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">yuan = function (options) {
+  return new Yuan(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.spm.yuan.Yuan" id="apidoc.element.spm.yuan.Yuan">
+        function <span class="apidocSignatureSpan">spm.yuan.</span>Yuan
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Yuan(options) {
+  options = options || {};
+
+  this.server = options.registry || spmrc.get(&#x27;registry&#x27;) || &#x27;http://spmjs.io&#x27;;
+  this.server = this.server.replace(/\/$/, &#x27;&#x27;);
+  options.proxy = options.proxy || spmrc.get(&#x27;proxy&#x27;);
+
+  this.authKey = &#x27;auth&#x27;;
+  this.options = options;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
